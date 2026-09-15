@@ -1,4 +1,4 @@
-public class Nauczyciel extends Osoba {
+public class Nauczyciel extends Osoba implements dyzurny{
     private String przedmiot;
 
     public Nauczyciel(String imie, String przedmiot) {
@@ -6,4 +6,16 @@ public class Nauczyciel extends Osoba {
         this.przedmiot = przedmiot;
     }
 
+    @Override
+    public String toString() {
+        return "Nauczyciel{" +
+                "imie" +getImie()+
+                "przedmiot='" + przedmiot + '\'' +
+                '}';
+    }
+
+    @Override
+    public void wykonajWyzur() {
+
+    }
 }

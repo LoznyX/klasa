@@ -1,4 +1,4 @@
-public class Uczen extends  Osoba {
+public class Uczen extends  Osoba implements dyzurny{
 
     private int nrUcznia;
     private static int LiczbaUczniow = 0;
@@ -17,5 +17,12 @@ public class Uczen extends  Osoba {
                 "nrUcznia=" + nrUcznia +
                 '}';
     }
+
+    @Override
+    public void wykonajWyzur() {
+
+    }
 }
+
+
 
