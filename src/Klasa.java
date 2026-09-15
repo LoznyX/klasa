@@ -28,7 +28,11 @@ public class Klasa {
         }
     }
 public void WypiszInfoKlasy(){
-
+    System.out.println("Klasa: "+nazwa);
+    System.out.println("wychowawca: "+wychowawca);
+    for (Uczen uczen:uczniowie) {
+        System.out.println("- "+uczen);
+    }
 }
     @Override
     public String toString() {
